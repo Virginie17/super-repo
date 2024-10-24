@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Repo inutile</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        background: #111;
+        color: white;
+        flex-direction: column;
+      }
+      a {
+        background: rgb(244, 114, 159);
+        color: white;
+        text-decoration: none;
+        padding: 8px 20px;
+        border-radius: 5px;
+      }
+      a:hover {
+        background: rgb(244, 114, 159, 0.8);
+      }
+    </style>
+  </head>
+  <body id="root">
+    <script>
+      function init() {
+        const root = document.getElementById("root");
+
+        const h1 = document.createElement("h1");
+        const link = document.createElement("a");
+
+        h1.textContent = "Cette page ne sert à rien, mais c'est pas grave !";
+        link.textContent = "Regardons la page d'Antho ici !";
+
+        link.href = ""; // Lien vers la page d'Antho !
+
+        root.appendChild(h1);
+        root.appendChild(link);
+      }
+
+      init();
+    </script>
+  </body>
+</html>
